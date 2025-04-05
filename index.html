@@ -361,7 +361,7 @@ function update() {
 function gameOver(isSuccess = false) {
     isPaused = true;
     clearInterval(timerInterval);
-    alert(isSuccess ? `🎉 通关成功！得分: ${gameState.score}` : `游戏结束！得分: ${gameState.score}`);
+    alert(isSuccess ? `得分: ${gameState.score}🎉 通关成功！人生没有白走的路，只有不忘初心才能行稳致远！` : `得分: ${gameState.score}游戏结束！人生没有白走的路，只有不忘初心才能行稳致远！`);
     document.getElementById('startPauseBtn').textContent = '重新开始';
 }
 
